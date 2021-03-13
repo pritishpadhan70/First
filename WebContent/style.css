@@ -1,0 +1,203 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 100vh;
+    background-image: url('puppy.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.nav-menu {
+    float: right;
+    margin-top: 10px ;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.button a {
+    background-color: #353131;
+    border: 3px white;
+    color: rgb(185, 80, 31);
+    font-weight: bold;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 08px;
+}
+.button :hover {
+    background-color: lightsalmon;
+    color: white;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+
+.box {
+    width: 300px;
+    padding: 10px;
+    position: absolute;
+    top: 45%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    background: #353131;
+    text-align: center;
+    border-radius: 10px;
+}
+.box h2 {
+    color: rgb(235, 137, 26);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+.box input[type="text"], .box input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid rgb(184, 77, 28);
+    padding: 14px 10px;
+    width: 300px;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+    transition: 0.25s;
+}
+.box input[type="text"]:focus, .box input[type="password"]:focus{
+    width: 280px;
+    border-color: green;
+}
+.box input[type="submit"]{
+    float: left;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid rgb(184, 77, 28);
+    padding: 14px 10px;
+    width: 140px;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+    transition: 0.25s;
+}
+.box input[type="submit"]:hover{
+    background-color: lightsalmon;
+    border: 3px white;
+    cursor: pointer;
+}
+.signup {
+    float: right;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid rgb(184, 77, 28);
+    padding: 14px 10px;
+    width: 140px;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.signupdiv :hover{
+    background-color: lightsalmon;
+    border: 3px white;
+    cursor: pointer;
+}
+.scrl {
+    position: fixed;
+    width: 300px;
+    padding: 250px;
+    position: absolute;
+    top: 40%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    background: none;
+    text-align: left;
+    text-size-adjust: bold;
+    color: orange;
+    border-color: 2px rgb(184, 77, 28);
+    border-radius: 10px;
+}
+.donatenow {
+    float: right;
+    margin-top: 350px;
+    margin-left: 160px;
+    
+}
+.donate {
+    background-color:rgb(92, 86, 86);
+    border: 5px black;
+    color: lightsalmon;
+    font-weight: bold;
+    padding: 20px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.donatenow :hover {
+    background-color: lightsalmon;
+    color: black;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+.w3-content w3-section{
+	position: absolute;
+	size: auto;
+}
+
+.backin {
+    float: left;
+    margin-top: 8px;
+    margin-left: 0px;
+    
+}
+.backin :hover {
+    background-color: white;
+    color: blue;
+    border: 1px white;
+    border-radius: 5px;
+}
+
+.back {
+    background-color:#8080ff;
+    border: 5px blue;
+    color: white;
+    font-weight: bold;
+    padding: 5px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: white;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
