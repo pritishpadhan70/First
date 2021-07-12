@@ -42,7 +42,7 @@ a:active {
 		if(session.getAttribute("userid") == null){
 			response.sendRedirect("login.html");
 		}
-	    ResultSet rn = DBUtility.getResultSet("SELECT NAME FROM USERDATA WHERE USER_ID="+session.getAttribute("userid"));
+	    ResultSet rn = DBUtility.getResultSet("SELECT NAME FROM USERDATA WHERE USERID="+session.getAttribute("userid"));
 		while(rn.next()){
 	    	name = "Welcome :"+rn.getString(1);
 		}	

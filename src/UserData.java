@@ -42,16 +42,16 @@ public class UserData extends HttpServlet {
 
 			while (rs.next()) {
 				User user = new User();
-				user.setUserId(rs.getInt("USER_ID"));
-				user.setEmail(rs.getString("EMAIL_ID"));
+				user.setUserId(rs.getInt("USERID"));
+				user.setEmail(rs.getString("EMAIL"));
 				user.setUserName(rs.getString("NAME"));
-				user.setMobileNo(rs.getLong("MOB_NO"));
+				user.setMobileNo(rs.getLong("MOBNO"));
 				list.add(user);
-				String name = rs.getString("NAME") + "		" + rs.getInt("USER_ID") + "		"
-						+ rs.getInt("PASSWORD") + "		" + rs.getString("EMAIL_ID") + "		"
-						+ rs.getLong("MOB_NO");
+				String name = rs.getString("NAME") + "		" + rs.getInt("USERID") + "		"
+						+ rs.getInt("PASSWORD") + "		" + rs.getString("EMAIL") + "		"
+						+ rs.getLong("MOBILE_NO");
 				/* System.out.println(name); */
-				//System.out.println(user);
+				System.out.println(user);
 			}
 			st.close();
 			con.close();

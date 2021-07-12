@@ -11,14 +11,11 @@
 </head>
 <body bgcolor="#7EC8C2">
 	
-	<a href="home.jsp">Back</a>
 	
 	
 	
-	<%
-		Boolean isAvailable=(Boolean)request.getAttribute("isAvailable");
-		
-	%>	
+	
+	
 	
 	
 	<center><h3>Add Data</h3>
@@ -53,11 +50,7 @@
 	
 	</form>
 	</center>
-	<%
-		if(isAvailable){
-	%>
-	<center><h4><font size="15 px" color="green"> Data Successfully Inserted to DB.</font></h4></center>
 	
-	<%} %>
+	
 </body>
 </html>

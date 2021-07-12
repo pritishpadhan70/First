@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
 import com.util.DBUtility;
 
 
@@ -34,7 +34,7 @@ public class LoginController extends HttpServlet {
 		}
 		else {
 			
-			request.setAttribute("msg", "Your credentials are incorrect.");
+			request.setAttribute("msg", "Your credentials are incorrect !!!");
 			dp=this.getServletContext().getRequestDispatcher("/login.jsp");
 			dp.forward(request, response);
 			/*this.getServletContext().getRequestDispatcher("/Error.html");*/
@@ -42,7 +42,7 @@ public class LoginController extends HttpServlet {
 	}
 	public static boolean isValidUser(Integer userId, Integer pass) {
 		boolean isValid = false;
-		final String query = "SELECT * FROM USERDATA where USER_ID=" + userId + " and PASSWORD = " + pass;
+		final String query = "SELECT * FROM USERDATA where USERID=" + userId + " and PASSWORD = " + pass;
 		try {
 			ResultSet rs = DBUtility.getResultSet(query);
 			

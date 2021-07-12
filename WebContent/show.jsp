@@ -60,9 +60,9 @@ tr:hover {background-color:#f5f5f5;}
 	<%
 		response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");
 		if(session.getAttribute("userid") == null){
-			response.sendRedirect("login.html");
+			response.sendRedirect("login.jsp");
 		}
-	    ResultSet rn = DBUtility.getResultSet("SELECT NAME FROM USERDATA WHERE USER_ID="+session.getAttribute("userid"));
+	    ResultSet rn = DBUtility.getResultSet("SELECT NAME FROM USERDATA WHERE USERID="+session.getAttribute("userid"));
 		while(rn.next()){
 	    	name = "Welcome :"+rn.getString(1);
 		}	

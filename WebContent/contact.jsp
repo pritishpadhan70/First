@@ -77,7 +77,7 @@ li a:hover:not(.active) {
 		if(session.getAttribute("userid") == null){
 			response.sendRedirect("login.html");
 		}
-	    ResultSet rn = DBUtility.getResultSet("SELECT NAME FROM USERDATA WHERE USER_ID="+session.getAttribute("userid"));
+	    ResultSet rn = DBUtility.getResultSet("SELECT NAME FROM USERDATA WHERE USERID="+session.getAttribute("userid"));
 		while(rn.next()){
 	    	name = "Welcome :"+rn.getString(1);
 		}	
@@ -105,8 +105,8 @@ li a:hover:not(.active) {
 		<td>
 			<ul class="uldiff">
 				
-				<ul class="uldiff">Pritish Gandu</ul>
-				<ul class="uldiff">Ram murty Nagar</ul>
+				<ul class="uldiff">Pritish Kumar Padhan</ul>
+				<ul class="uldiff">RamMurty Nagar</ul>
 				<ul class="uldiff">Mob: 8989898908</ul>
 				
 			</ul>

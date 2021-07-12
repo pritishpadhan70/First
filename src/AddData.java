@@ -26,14 +26,14 @@ public class AddData extends HttpServlet {
 		Long mobno=Long.parseLong(request.getParameter("mobno"));
 		String name=request.getParameter("name");
 		
-		String url = "jdbc:oracle:thin:@localhost:1521:orcl";
-		String uname = "scott";
+		String url = "jdbc:mysql://localhost:3306/test";
+		String uname = "root";
 		String pasw = "tiger";
 		Connection conn = null;
 		Statement stmt = null;
 		int count=0;
 		try {
-			Class.forName("oracle.jdbc.driver.OracleDriver");
+			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection(url,uname, pasw);
 			stmt = conn.createStatement();
 			count=stmt.executeUpdate("INSERT INTO USERDATA VALUES("+userid+","+pass+",'"+email+"',"+mobno+",'"+name+"')");

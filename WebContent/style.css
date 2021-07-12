@@ -1,13 +1,18 @@
 *
+
 {
     margin: 0;
     padding: 0;
+   
 }
+
+
 header {
     height: 100vh;
     background-image: url('puppy.jpg');
     background-position: center;
     background-size: cover;
+    
 }
 .nav-menu {
     float: right;
@@ -42,7 +47,7 @@ header {
 
 
 .box {
-    width: 300px;
+    width: 350px;
     padding: 10px;
     position: absolute;
     top: 45%;
@@ -151,6 +156,7 @@ header {
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 15px;
+    
 }
 .donatenow :hover {
     background-color: lightsalmon;
@@ -158,46 +164,6 @@ header {
     border: 1px solid black;
     border-radius: 12px;
 }
-
-.w3-content w3-section{
-	position: absolute;
-	size: auto;
+h1{
+    color: brown;
 }
-
-.backin {
-    float: left;
-    margin-top: 8px;
-    margin-left: 0px;
-    
-}
-.backin :hover {
-    background-color: white;
-    color: blue;
-    border: 1px white;
-    border-radius: 5px;
-}
-
-.back {
-    background-color:#8080ff;
-    border: 5px blue;
-    color: white;
-    font-weight: bold;
-    padding: 5px 50px;
-    text-align: center;
-    text-decoration: none;
-    display: white;
-    font-size: 20px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-
-
-
-
-
-
-
-
